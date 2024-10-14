@@ -3,57 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoBiz - Solusi untuk Usaha Anda</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="GoBiz adalah solusi lengkap untuk mengembangkan usaha kuliner Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi.">
-    <meta name="keywords" content="GoBiz, usaha kuliner, icalan, komplek,arisan, komunitas, bisnis, aplikasi bisnis">
-    <meta name="author" content="GoBiz by Indibiz">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="GoBiz - Solusi untuk Usaha Anda">
-    <meta property="og:description" content="GoBiz adalah solusi lengkap untuk mengembangkan usaha kuliner Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi.">
-    <meta property="og:image" content="img/square.webp">
-    <meta property="og:url" content="https://go.biz.id">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GoBiz - Solusi untuk Usaha Anda">
-    <meta name="twitter:description" content="GoBiz adalah solusi lengkap untuk mengembangkan usaha kuliner Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi.">
-    <meta name="twitter:image" content="img/square.webp">
+    <title>Aku Laper - Cepat Pesen!</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/img/logo.jpg" type="image/x-icon">
+
+    <!-- Path Folder -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.webp" alt="GoBiz Logo">
+    <header class="sticky top-0 bg-white">
+        <nav class="px-12 grid grid-cols-4 items-center">
+            <div class="flex gap-5 items-center">
+                <img src="assets/img/icon.jpg" alt="Aku Laper Logo" class="rounded-[50%] w-8 h-8">
+                <h1 class="font-bold text-xl">Aku Laper</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Layanan</a></li>
-                <li><a href="#">Bantuan</a></li>
-                <li><a href="#">BizTips</a></li>
+            <ul class="flex justify-center gap-12 col-span-2">
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
                 <li><a href="#">Komunitas</a></li>
             </ul>
-            <div class="auth-buttons">
-                <button class="btn btn-signup">Daftar</button>
-                <button class="btn btn-login">Masuk</button>
+            <div class="flex justify-end gap-4">
+                <a href="pages/user/register.html" class="border-2 border-orange-500 py-2 px-4 rounded-3xl text-orange-500 hover:bg-orange-600 hover:text-white hover:border-orange-600 duration-500">
+                    <p>Register</p>
+                </a>
             </div>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-text">
-            <h1>Satu Aplikasi, Beragam Solusi Kembangkan Usaha Anda</h1>
+            <h1>Pesan Makanan Sekarang Juga, Cepetan!</h1>
         </div>
         <div class="hero-image">
-            <img src="img/square.webp" alt="Hero Image">
+            <img src="assets/img/logo.jpg" alt="Hero Image">
+        </div>
+        <div class="py-14">
+            <a href="" class="bg-orange-500 px-20 py-4 rounded-xl font-bold text-xl text-white hover:bg-orange-600 duration-500">
+                Login
+            </a>
         </div>
     </section>
 
@@ -73,7 +65,7 @@
     </section>
 
     <section class="partners">
-        <h2>Mitra-mitra yang Telah Percaya GoBiz</h2>
+        <h2>Mitra-mitra yang Telah Percaya Aku Laper</h2>
         <div class="partner-logos">
             <img src="img/partner1.webp" alt="Partner 1">
             <img src="img/partner2.webp" alt="Partner 2">
@@ -81,41 +73,17 @@
         </div>
     </section>
 
-    <section class="registration">
-        <h2>Pendaftaran GoBiz</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>Buka Aplikasi GoBiz</h3>
-            </div>
-            <div class="step">
-                <h3>Registrasi</h3>
-            </div>
-            <div class="step">
-                <h3>Aktivasi</h3>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <h2>Cerita mereka yang sudah memilih GoBiz</h2>
-        <div class="testimonial">
-            <p>"Fitur dalam aplikasi GoBiz sangat mempermudah dalam mengelola usaha kuliner."</p>
-            <p>Nedi Sopian, Pemilik pasakanambu</p>
-        </div>
-        <div class="testimonial-video">
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-
+    <!-- ===== footer ===== -->
     <footer>
-        <div class="footer-content">
-            <p>© 2024 GoBizID, PT Informatika Digital Bisnis</p>
+        <div class="footer-content" style="text-align: center;">
+            <p>© <span id="currentYear"></span> AkuLaper, PT ABNORMAL</p>
+            <p>Alamat: Jl. Sariasih No. 54, Kota Bandung, Indonesia</p>
+            <p>Email: company.abnormal@gmail.com | Telepon: +62 8783 6608 003</p>
         </div>
     </footer>
-    
-    <script src="script.js"></script>
+
+
+    <!-- ===== scripts ===== -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
