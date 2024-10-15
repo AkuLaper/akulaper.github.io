@@ -18,7 +18,7 @@
 <body>
     <header class="sticky top-0 bg-white">
         <nav class="px-12 grid grid-cols-4 items-center">
-            <div class="flex gap-5 items-center">
+            <div class="flex gap-3 items-center">
                 <img src="../../assets/img/icon.jpg" alt="Logo" class="rounded-[50%] w-8 h-8">
                 <img src="https://play-lh.googleusercontent.com/d5vhQ88ayAfxnclr1UXa7tNRtWLqO22IKWXxKzcW4fcxHSdg9eqQx5jP8AgN_fQUEg=w526-h296-rw" alt="Profile Picture" class="rounded-[50%] w-8 h-8">
                 <p>Joko Kentir</p>
@@ -27,29 +27,25 @@
                     <p>Your Location</p>
                 </a>
             </div>
-            <ul class="flex justify-center gap-12 col-span-2">
-                <li><a href="../../pages/about.html">Tentang</a></li>
-                <li><a href="../../pages/kontak.html">Kontak</a></li>
-                <li><a href="#">Pesan</a></li>
+            <ul class="flex justify-center gap-12 items-center">
+                <li class="border-b-2 border-orange-500"><a href="index.html">Katalog</a></li>
+                <li><a href="menu.html">Menu</a></li>
             </ul>
+            <div>
+                <div class="flex justify-center gap-2 items-center border-2 border-black rounded-3xl px-2">
+                    <input type="search" name="" id="" placeholder="Cari Menu" class="rounded-3xl w-96 px-4 py-2 focus:outline-none">
+                    <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png" alt="" class="rounded-[50%] w-8 h-8 cursor-pointer">
+                </div>
+            </div>
             <div class="flex justify-end gap-4">
-                <a href="pages/register.html" class="border-2 border-red-500 py-2 px-4 rounded-3xl text-red-500 hover:bg-red-600 hover:text-white hover:border-red-600 duration-500">
+                <a href="../../pages/login.html" class="border-2 border-red-500 py-2 px-4 rounded-3xl text-red-500 hover:bg-red-600 hover:text-white hover:border-red-600 duration-500">
                     <p>Logout</p>
                 </a>
             </div>
         </nav>
     </header>
 
-    <main class="px-12">
-
-        <!-- ==== search section ==== -->
-        <section class="py-4 flex justify-center gap-2 items-center">
-            <div class="flex justify-center gap-2 items-center border-2 border-black rounded-3xl px-2">
-                <input type="search" name="" id="" placeholder="Cari Resto" class="rounded-3xl w-96 px-4 py-2 focus:outline-none">
-                <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png" alt="" class="rounded-[50%] w-8 h-8 cursor-pointer">
-            </div>
-        </section>
-        <!-- ==== end of search section ==== -->
+    <main class="px-12 pt-6">
 
         <!-- ==== Toko Section ==== -->
         <section class="pb-12">
