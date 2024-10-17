@@ -26,6 +26,24 @@
     .font-sixtyfour-convergence {
         font-family: 'Sixtyfour Convergence', sans-serif;
     }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .animated-bg {
+        background: linear-gradient(270deg, #fbd204, #ffffff, #f7d00a);
+        background-size: 400% 400%;
+        animation: gradientAnimation 6s ease infinite;
+    }
 </style>
 
 </head>
@@ -82,9 +100,11 @@
                         src="https://png.pngtree.com/png-vector/20200522/ourmid/pngtree-hands-holding-smartphone-to-send-message-png-image_2210454.jpg"
                         alt="card-image" class="rounded-lg object-cover w-full h-full" />
                 </div>
-                <div class="my-4 text-gray-600 font-sans font-semibold">
-                    <p>Pemesanan Online</p>
+                <div class="my-5 text-gray-600 font-sans font-semibold" style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: bold;">
+                    <p>Pemesanan online</p>
                 </div>
+                
+                
              </div>
             <!-- end of card -->
 
@@ -96,7 +116,7 @@
                         src="https://img.freepik.com/premium-vector/credit-card-cash-withdrawal-payment_68708-2050.jpg"
                         alt="card-image" class="rounded-lg object-cover w-full h-full" />
                 </div>
-                <div class="my-4 text-gray-600 font-sans font-semibold">
+                <div class="my-4 text-gray-600 font-sans font-semibold" style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: bold;">
                     <p>Bayar dengan mudah</p>
                 </div>
              </div>
@@ -110,7 +130,7 @@
                         src="https://png.pngtree.com/png-clipart/20191113/ourmid/pngtree-mobile-payment-digital-marketing-online-payment-systems-e-commerce-shopping-in-png-image_1983783.jpg"
                         alt="card-image" class="rounded-lg object-cover w-full h-full" />
                 </div>
-                <div class="my-4 text-gray-600 font-sans font-semibold">
+                <div class="my-4 text-gray-600 font-sans font-semibold" style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: bold;">
                     <p>Pembayaran aman</p>
                 </div>
              </div>
@@ -124,7 +144,7 @@
                         src="https://png.pngtree.com/png-clipart/20211017/original/pngtree-woman-choosing-food-illustration-png-image_6859661.png"
                         alt="card-image" class="rounded-lg object-cover w-full h-full" />
                 </div>
-                <div class="my-4 text-gray-600 font-sans font-semibold">
+                <div class="my-4 text-gray-600 font-sans font-semibold" style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: bold;">
                     <p>Banyak pilihan</p>
                 </div>
              </div>          
@@ -133,15 +153,12 @@
     <!-- END OF CARD SECTION -->
 
   <!-- MENU SPESIAL SESSION -->
-  <section class="mx-80 bg-gradient-to-t from-yellow-200 to-yellow-300 relative" style="top: -70px; border-top: 2px solid rgb(14, 12, 12); border-bottom: 2px solid black; border-left: 2px solid black; border-right: 2px solid black;">
-
+  <section class="mx-80 animated-bg relative" style="top: -80px;">
 
     <div style="position: relative; text-align: center; ">
         <h1 class="font-great-vibes text-9xl text-orange-500" style="position: relative; z-index: 1; top: 20px;">Spesialis</h1>
-
         
         <h2 class="text-4xl font-semibold mt-4 text-black" style="position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%); font-family: 'Poppins', sans-serif; z-index: 2;">Menu Kami</h2>
-
     </div>
 
     <section id="Card Menu Spesial"
@@ -263,7 +280,15 @@
     </section>
     <!-- MITRA SESSION END -->
 
-
+    <!-- <div class="p-4 max-w-sm w-full mx-auto">
+        <div class="animate-pulse flex justify-center items-center space-x-4">
+            <div class="my-4 text-gray-600 font-sans font-semibold" style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: bold; font-size: 1.125rem;">
+                KENAPEE
+            </div>
+            
+        </div>
+    </div> -->
+    
 
     <!-- ===== footer ===== -->
     <div class="text-center text-center bg-yellow-300 p-6">
