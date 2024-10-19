@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     
   <!-- Font Awesome for Icons -->
   <style>
@@ -44,6 +45,23 @@
         background-size: 400% 400%;
         animation: gradientAnimation 6s ease infinite;
     }
+
+    @keyframes slideInFromRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Terapkan animasi dengan durasi lebih lama */
+    .slide-right-to-left {
+        animation: slideInFromRight 3s ease-out; /* Durasi 3 detik */
+    }
+    
 </style>
 
 </head>
@@ -89,8 +107,9 @@
     <!-- CARD SECTION-->
     <section class="m-40 relative" style="top: -60px;">
 
-        <h1 class="mb-4 text-4xl font-semibold tracking-tight leading-none text-center md:text-3xl lg:text-4xl" style="font-family: 'Poppins', sans-serif;">
-            Layanan Kami </h1>
+        <h1 class="mb-4 text-4xl font-semibold tracking-tight leading-none text-center md:text-3xl lg:text-4xl slide-right-to-left" style="font-family: 'Poppins', sans-serif;">
+            Layanan Kami
+        </h1>
         <!-- container -->
          <div class="grid grid-cols-4 gap-10">
             <!-- card -->
@@ -354,5 +373,12 @@
 
     <!-- ===== scripts ===== -->
 <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"></script>
+<script>
+    AOS.init({
+        once: true, // Animasi hanya terjadi satu kali saat elemen terlihat
+        duration: 2000, // Durasi animasi default (dapat disesuaikan untuk setiap elemen)
+    });
+</script>
 </body>
 </html>
